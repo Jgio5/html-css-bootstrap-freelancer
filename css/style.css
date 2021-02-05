@@ -5,7 +5,6 @@
 }
 
 /* Utility */
-
 .padding_top_standard {
   padding-top: 30px;
 }
@@ -17,9 +16,42 @@
 .bg_green {
   background-color: #1ABC9C;
 }
+/* Fine Utility */
+
+/* COMMON */
+.line-star {
+  max-width: 400px;
+  min-width: 300px;
+  font-size: 35px;
+  margin: 30px auto;
+}
+.line-star:after,
+.line-star:before {
+  content: '';
+  display: inline-block;
+  width: 30%;
+  height: 5px;
+  border-radius: 2px;
+  line-height: 5px;
+  vertical-align: middle;
+}
+.line-star-white:after,
+.line-star-white:before {
+  background-color: white;
+}
+.line-star-black:after,
+.line-star-black:before {
+  background-color: black;
+}
+.line-star i {
+  padding: 0 5px;
+}
 
 /* header */
 .ms_top_header {
+  /* z-index: 999;
+  position: fixed;
+  top: 0; */
   width: 100%;
   color: white;
   background-color: #2C3E50;
@@ -43,27 +75,52 @@
   color: white;
   padding: 0 10px;
 }
+.ms_top_header i {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
 
 .ms_jumbotron {
   color: white;
 }
 
 .ms_jumbotron img {
-  height: 300px;
-  width: 300px;
+  max-width: 250px;
 }
-/* main */
+/* Fine header */
 
+/* main */
 .box {
+  position: relative;
   border-radius: 10px;
   margin: 5px 0;
+  overflow: hidden;
 }
 
 .box img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
+/* .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ABC9C;
+  opacity: 0.4;
+  display: none;
+}
+.layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  display: none;
+} */
+
 
 #about {
   color: white;
@@ -76,7 +133,30 @@
   color:white;
   background-color: #1ABC9C;
   border-color: white;
+  margin-top: 20px;
 }
+/* form id= contanct*/
+#name,
+#email,
+#number,
+#text {
+  padding: 10px 0 30px 0;
+  border-top: 0 transparent;
+  border-left: 0 transparent;
+  border-right: 0 transparent;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 20px;
+  color: #2C3E50;
+}
+
+#buttom {
+  padding: 10px 20px;
+  color: white;
+  background-color: #1ABC9C;
+}
+/* Fine form */
+
 /* footer */
 
 .ms_footer_top {
@@ -109,6 +189,7 @@
   background-color: #1A252F;
   color: white;
 }
+
 /* hover */
 .ms_top_header a:hover {
   color:#1ABC9C;
